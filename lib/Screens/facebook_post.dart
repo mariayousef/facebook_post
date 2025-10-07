@@ -62,7 +62,72 @@ class FacebookPost extends StatelessWidget {
                   Icon(Icons.more_horiz, color: Colors.white70),
                 ],
               ),
+              SizedBox(height: 10),
+              Text(
+                "hey...you are doing amazing .. keep going",
+                style: TextStyle(
+                  color: Colors.white70,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
+              ),
+              SizedBox(height: 20),
+              // Container(
+              //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+              //   child: Image(
+              //     image: AssetImage("assets/keepgoing.jpeg"),
+              //     width: 380,
+              //     height: 300,
+              //     fit: BoxFit.cover,
+              //   ),
+              // ),
+              ClipRRect(
+                child: Image(
+                      image: AssetImage("assets/keepgoing.jpeg"),
+                      width: 380,
+                      height: 300,
+                      fit: BoxFit.cover,
+                    ),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("4 reacts ",style: TextStyle(color: Colors.white70),),
+                  Text("2 comments",style: TextStyle(color: Colors.white70),),
+                ],
+              ),
+              SizedBox(height: 14,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.thumb_up,color: Colors.white70,),
+                      SizedBox(width: 10,),
+                      Text("like",style: TextStyle(color: Colors.white70),),
+                    ],
+                  ),
 
+                  Row(
+                    children: [
+                      Icon(Icons.comment,color: Colors.white70,),
+                      SizedBox(width: 10,),
+                      Text("comment",style: TextStyle(color: Colors.white70),),
+                    ],
+                  ),
+
+                  Row(
+                    children: [
+                      Icon(Icons.shortcut_outlined,color: Colors.white70,),
+                      SizedBox(width: 10,),
+                      Text("share",style: TextStyle(color: Colors.white70),),
+                    ],
+                  ),
+
+                ],
+              ),
             ],
           ),
         ),
