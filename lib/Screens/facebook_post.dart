@@ -7,17 +7,42 @@ class FacebookPost extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  backgroundImage: AssetImage("assets/profile.jpeg"),
-                  radius: 35,
-                ),
-              ],
-            ),
-          ],
+        child: Container(
+          padding: EdgeInsets.all(16.0),
+          width: double.infinity,
+          color: Color(0xff242526),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Row(
+                textDirection: TextDirection.rtl,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  CircleAvatar(
+                    backgroundImage: AssetImage("assets/profile.jpeg"),
+                    radius: 35,
+                  ),
+                  Container(width: 10,),
+                  Column(
+                    children: [
+                      Text(
+                        "Maria Youssef",
+                        style: TextStyle(
+                          color: Colors.white70,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      Text(
+                        "6 oct",
+                        style: TextStyle(color: Colors.white70, fontSize: 14),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
