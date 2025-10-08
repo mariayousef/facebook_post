@@ -99,8 +99,6 @@ class CustomFaceBookPost extends StatelessWidget {
               ],
             ),
             SizedBox(height: 14),
-            Divider(color: Colors.white70),
-            SizedBox(height: 14),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -129,6 +127,9 @@ class CustomFaceBookPost extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 14),
+            Divider(color: Colors.white70 ,height: 0.1,),
+            SizedBox(height: 14),
           ],
         ),
       ),
