@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
-class FacebookPost extends StatelessWidget {
-  const FacebookPost({super.key});
+class CustomFaceBookPost extends StatelessWidget {
+  const CustomFaceBookPost({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
+    return SafeArea(
         child: Container(
           padding: EdgeInsets.all(16.0),
           width: double.infinity,
@@ -72,15 +71,7 @@ class FacebookPost extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              // Container(
-              //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
-              //   child: Image(
-              //     image: AssetImage("assets/keepgoing.jpeg"),
-              //     width: 380,
-              //     height: 300,
-              //     fit: BoxFit.cover,
-              //   ),
-              // ),
+
               ClipRRect(
                 child: Image(
                       image: AssetImage("assets/keepgoing.jpeg"),
@@ -98,6 +89,8 @@ class FacebookPost extends StatelessWidget {
                   Text("2 comments",style: TextStyle(color: Colors.white70),),
                 ],
               ),
+              SizedBox(height: 14,),
+              Divider(color: Colors.white70,),
               SizedBox(height: 14,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -131,7 +124,6 @@ class FacebookPost extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }

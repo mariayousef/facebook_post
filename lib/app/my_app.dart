@@ -1,6 +1,6 @@
-
-import 'package:facebook_post/Screens/facebook_post.dart';
+import 'package:facebook_post/screens/facebook_screen.dart';
 import 'package:flutter/material.dart';
+import '../widgets/custom_facebook_post.dart';
 
 class Myapp extends StatelessWidget {
   const Myapp({super.key});
@@ -8,7 +8,7 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: FacebookPost(
+      home: FacebookScreen(
 
       ),
     );
