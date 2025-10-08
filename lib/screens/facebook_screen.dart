@@ -6,17 +6,13 @@ class FacebookScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-        body: SafeArea(
-            child:ListView(
-              children: [
-                CustomFaceBookPost(),
-                CustomFaceBookPost(),
-                CustomFaceBookPost(),
-                CustomFaceBookPost(),
-              ],
-            ),
+    return Scaffold(
+      body: SafeArea(
+        child: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (context, index) => CustomFaceBookPost(),
         ),
+      ),
     );
   }
 }
