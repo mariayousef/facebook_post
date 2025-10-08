@@ -61,6 +61,8 @@ flutter:
   assets:
      - assets/keepgoing.jpeg
      - assets/profile.jpeg
+     - assets/ph2.jpeg
+     - assets/Flag_of_Palestine.svg.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
